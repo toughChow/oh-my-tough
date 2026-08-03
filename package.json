@@ -1,0 +1,13 @@
+{
+  "name": "oh-my-tough",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress --host 0.0.0.0",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "latest"
+  }
+}
