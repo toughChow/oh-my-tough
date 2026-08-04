@@ -71,7 +71,16 @@ export default defineConfig({
             ]
           },
           { text: '前端框架', link: '/02-frontend/' },
-          { text: '浏览器与网络', link: '/03-browser-network/' },
+          {
+            text: '浏览器与网络',
+            link: '/03-browser-network/',
+            items: [
+              { text: '虚拟网络学习路线', link: '/03-browser-network/virtual-network/' },
+              { text: 'OrbStack 实验环境', link: '/03-browser-network/virtual-network/orbstack-setup' },
+              { text: '实验 1：namespace、veth 与 bridge', link: '/03-browser-network/virtual-network/lab-01-bridge' },
+              { text: '实验 2：跨子网路由', link: '/03-browser-network/virtual-network/lab-02-router' }
+            ]
+          },
           { text: '后端与 API', link: '/04-backend-api/' },
           { text: '数据库', link: '/05-database/' },
           { text: 'Redis 与消息队列', link: '/06-redis-message-queue/' },
