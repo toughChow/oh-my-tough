@@ -76,6 +76,7 @@ export default defineConfig({
             link: '/03-browser-network/README',
             items: [
               { text: '虚拟网络学习路线', link: '/03-browser-network/virtual-network/README' },
+              { text: '概念篇：数据包如何流动', link: '/03-browser-network/virtual-network/packet-journey' },
               { text: 'OrbStack 实验环境', link: '/03-browser-network/virtual-network/orbstack-setup' },
               { text: '实验 1：namespace、veth 与 bridge', link: '/03-browser-network/virtual-network/lab-01-bridge' },
               { text: '实验 2：跨子网路由', link: '/03-browser-network/virtual-network/lab-02-router' }

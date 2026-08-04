@@ -1,6 +1,7 @@
 # 03｜浏览器与网络
 
 - [虚拟网络学习路线](virtual-network/README.md)
+  - [概念篇：数据包如何在虚拟网络中流动](virtual-network/packet-journey.md)
   - [OrbStack 实验环境搭建](virtual-network/orbstack-setup.md)
   - [实验 1：network namespace、veth 与 Linux bridge](virtual-network/lab-01-bridge.md)
   - [实验 2：用 Linux 路由器连接两个子网](virtual-network/lab-02-router.md)

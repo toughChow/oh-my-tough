@@ -1,5 +1,9 @@
 # 实验 1：namespace、veth 与 Linux bridge
 
+::: info 建议先读
+如果还不能清楚区分 MAC、IP、ARP 表和 bridge FDB，请先阅读[概念篇：数据包如何在虚拟网络中流动](./packet-journey.md)，再回来用实验验证。
+:::
+
 ## 本课目标
 
 用一个 Linux 内核模拟两台主机和一台二层交换机，并观察 ARP 与 MAC 地址学习。
@@ -204,4 +208,3 @@ ip link show lab-br0
 4. `ip neigh` 和 `bridge fdb` 分别记录 IP→MAC 还是 MAC→端口？
 
 [下一课：用 Linux 路由器连接两个子网 →](./lab-02-router.md)
-

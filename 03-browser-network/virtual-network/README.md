@@ -37,15 +37,25 @@ network namespace       隔离网卡、IP、路由表、ARP 表和端口
 4. **容器网络**：Docker bridge、端口映射、容器 DNS。
 5. **跨主机网络**：VXLAN、Overlay、CNI 和 NetworkPolicy。
 
-本专题先完成前两步。实验不是以“ping 通”为终点，而是要求你能预测数据包下一步会去哪里，并用命令验证预测。
+本专题先完成前两步。学习顺序是“概念 → 预测 → 实验 → 解释结果”，不是以“ping 通”为终点，而是要求你能预测数据包下一步会去哪里，并用命令验证预测。
+
+## 课程结构
+
+| 顺序 | 内容 | 学习结果 |
+| --- | --- | --- |
+| 1 | [概念篇：数据包如何流动](./packet-journey.md) | 建立二层、三层、namespace 和内核转发的心智模型 |
+| 2 | [OrbStack 实验环境](./orbstack-setup.md) | 在 macOS 上准备可重复的 Linux 实验机 |
+| 3 | [实验 1：同一子网](./lab-01-bridge.md) | 用 namespace、veth 和 bridge 验证 ARP 与二层交换 |
+| 4 | [实验 2：跨子网](./lab-02-router.md) | 用路由表、默认网关和 IP forwarding 验证三层转发 |
 
 ## 开始前的准备
 
 macOS 没有 Linux 的 `ip netns`、veth 和 Linux bridge，因此需要一个 Linux 环境。本教程使用 OrbStack 创建独立的 Ubuntu 实验机：
 
-1. [搭建 OrbStack 实验环境](./orbstack-setup.md)
-2. [实验 1：network namespace、veth 与 Linux bridge](./lab-01-bridge.md)
-3. [实验 2：用 Linux 路由器连接两个子网](./lab-02-router.md)
+1. 先阅读[概念篇：数据包如何在虚拟网络中流动](./packet-journey.md)。
+2. 再[搭建 OrbStack 实验环境](./orbstack-setup.md)。
+3. 完成[实验 1：network namespace、veth 与 Linux bridge](./lab-01-bridge.md)。
+4. 完成[实验 2：用 Linux 路由器连接两个子网](./lab-02-router.md)。
 
 ::: tip 实验约定
 所有网络对象都创建在专用 Ubuntu 机器中，并使用固定名称。每课末尾都有清理命令；即使操作失败，也不会改变 Mac 的真实网络配置。
@@ -60,4 +70,3 @@ macOS 没有 Linux 的 `ip netns`、veth 和 Linux bridge，因此需要一个 L
 - 路由器转发数据包时，哪些字段会改变？
 
 如果能不看答案画出两课的拓扑，并逐跳解释 MAC、IP 和 TTL 的变化，就算真正掌握了这一阶段。
-
