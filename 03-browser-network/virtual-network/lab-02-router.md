@@ -192,4 +192,6 @@ ip netns list
 3. 路由器转发一次，IP、MAC 和 TTL 分别如何变化？
 4. 为什么回程路由同样重要？
 
-下一阶段可以在路由器上加入 NAT，让私网主机访问外部网络，再把同样的结构映射到 Docker bridge 网络。
+下一阶段在路由器上加入 NAT，让私网主机访问外部网络，再把同样的结构映射到 Docker bridge 网络。
+
+[下一章：NAT 与 conntrack →](./nat-conntrack.md)

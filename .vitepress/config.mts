@@ -79,7 +79,18 @@ export default defineConfig({
               { text: '概念篇：数据包如何流动', link: '/03-browser-network/virtual-network/packet-journey' },
               { text: 'OrbStack 实验环境', link: '/03-browser-network/virtual-network/orbstack-setup' },
               { text: '实验 1：namespace、veth 与 bridge', link: '/03-browser-network/virtual-network/lab-01-bridge' },
-              { text: '实验 2：跨子网路由', link: '/03-browser-network/virtual-network/lab-02-router' }
+              { text: '实验 2：跨子网路由', link: '/03-browser-network/virtual-network/lab-02-router' },
+              { text: 'NAT 与 conntrack', link: '/03-browser-network/virtual-network/nat-conntrack' },
+              { text: 'nftables 与状态防火墙', link: '/03-browser-network/virtual-network/firewall-policy' },
+              { text: 'VLAN 与二层隔离', link: '/03-browser-network/virtual-network/vlan-segmentation' },
+              { text: 'TUN/TAP 与用户态网络', link: '/03-browser-network/virtual-network/tuntap-vpn' },
+              { text: 'VXLAN 与 Overlay', link: '/03-browser-network/virtual-network/vxlan-overlay' },
+              { text: 'IPv6 虚拟网络', link: '/03-browser-network/virtual-network/ipv6' },
+              { text: 'Docker 网络', link: '/03-browser-network/virtual-network/docker-networking' },
+              { text: 'Kubernetes 与 CNI', link: '/03-browser-network/virtual-network/kubernetes-networking' },
+              { text: '云 VPC', link: '/03-browser-network/virtual-network/cloud-vpc' },
+              { text: '系统化排错', link: '/03-browser-network/virtual-network/troubleshooting' },
+              { text: '综合设计与选型', link: '/03-browser-network/virtual-network/capstone' }
             ]
           },
           { text: '后端与 API', link: '/04-backend-api/' },

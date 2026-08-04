@@ -47,13 +47,15 @@ orb -m netlab -u root
 
 ```bash
 apt update
-apt install -y iproute2 iputils-ping tcpdump
+apt install -y iproute2 iputils-ping tcpdump nftables conntrack
 ```
 
 确认环境：
 
 ```bash
 ip -V
+nft --version
+conntrack -V
 ip netns list
 uname -a
 ```
@@ -127,4 +129,3 @@ ip -br link
 - [OrbStack commands](https://docs.orbstack.dev/machines/commands)
 
 [下一步：实验 1，搭建同一子网 →](./lab-01-bridge.md)
-
